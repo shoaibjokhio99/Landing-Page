@@ -230,65 +230,61 @@ span{
     margin: 5px 3px;
 }
 
-/* CSS for button animation */
+
 .clicked {
-    background-color: rgba(255, 253, 253, 0.487); /* Change the background color to a semi-transparent white */
-    transition: background-color 0.5s; /* Add a smooth transition effect */
+    background-color: rgba(255, 253, 253, 0.487); 
+    transition: background-color 0.5s; 
 }
 
-
-/* CSS for responsiveness */
-
-/* Media query for screens smaller than 768px (e.g., smartphones) */
 @media only screen and (max-width: 768px) {
     .nav-list {
-        flex-direction: column; /* Display navigation links vertically */
+        flex-direction: column; 
     }
 
     .right-nav {
-        text-align: center; /* Center-align the search input and button */
+        text-align: center; 
         width: 100%;
-        margin-top: 10px; /* Add some space between the search input/button and navigation links */
+        margin-top: 10px; 
     }
 
     .navbar {
-        padding: 10px 20px; /* Increase padding for better spacing on smaller screens */
+        padding: 10px 20px; 
     }
 
     .nav-list li {
-        margin-right: 0; /* Remove margin between navigation links */
-        margin-bottom: 10px; /* Add some space between navigation links */
+        margin-right: 0; 
+        margin-bottom: 10px; 
     }
 
     .section {
-        flex-direction: column; /* Stack sections vertically */
-        height: auto; /* Allow sections to expand based on content */
+        flex-direction: column;
+        height: auto; 
     }
 
     .box-main {
-        flex-direction: column; /* Stack boxes in the first section vertically */
-        text-align: center; /* Center-align text and buttons in the first section */
-        max-width: 100%; /* Allow content to take full width on smaller screens */
+        flex-direction: column; 
+        text-align: center; 
+        max-width: 100%;
     }
 
     .first-half {
-        width: 100%; /* Make the first-half take full width on smaller screens */
+        width: 100%; 
     }
 
     .second-half img {
-        width: 100%; /* Make the image in the first section take full width */
+        width: 100%;
     }
 
     .paras {
-        padding: 0 20px; /* Reduce padding for paragraphs in sections */
+        padding: 0 20px; 
     }
 
     .form-input {
-        width: 100%; /* Make form inputs take full width on smaller screens */
+        width: 100%; 
     }
 
     .thumbnail img {
-        width: 100%; /* Make images in sections take full width on smaller screens */
+        width: 100%; 
     }
 }
 
