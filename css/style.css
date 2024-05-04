@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 50%;
+    height: 50%;
+    border: 3px solid white;
+    border-radius: 150px;
+    margin-top: 5px;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 70%;
+}
+
+.nav-list li{
+    list-style: none;
+    margin-right: 25px;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.nav-list li a:hover{
+    color: silver;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: white;
+}
+
+.right-nav{
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+
+
+.background{
+    background: rgba(0, 0, 0.5, 0.7) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+span{
+    color: darkcyan;
+}
+
+.firstsection{
+    height:100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 70%;
+}
+
+.first-half{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.second-half{
+    width: 30%;
+
+}
+
+.second-half img{
+    width: 70%;
+    padding: 4px 0;
+    border: 4px solid white;
+    border-radius: 150px;
+}
+
+.text-big{
+    font-size: 41px;
+}
+
+.text-small{
+    font-size: 18px;
+
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm{
+    background: none;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.imagefluid{
+    height: 200px;
+}
+
+.paras{
+    padding: 0px 65px;
+}
+
+.sectiontag{
+    padding:16px 0;
+}
+
+.sectionsubtag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img{
+    border: 2px solid black;
+    border-radius: 26px;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.thumbnail img:hover {
+    transform: scale(1.5); /* Scale up the image slightly on hover */
+}
+
+.contact{
+    background-color:gray;
+    height: 600px;
+}
+
+.text-center{
+    text-align: center;
+    padding: 30px;
+    font-family: "Ubuntu", sans-serif ;
+    font-size: 30px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 1237px;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.form-input{
+    margin: 14px 0px;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-footer{
+    text-align: center;
+    padding: 30px;
+    font-family: "Ubuntu", sans-serif ;
+    color: white;
+}
+
+.burger{
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+/* CSS for button animation */
+.clicked {
+    background-color: rgba(255, 253, 253, 0.487); /* Change the background color to a semi-transparent white */
+    transition: background-color 0.5s; /* Add a smooth transition effect */
+}
+
+
+/* CSS for responsiveness */
+
+/* Media query for screens smaller than 768px (e.g., smartphones) */
+@media only screen and (max-width: 768px) {
+    .nav-list {
+        flex-direction: column; /* Display navigation links vertically */
+    }
+
+    .right-nav {
+        text-align: center; /* Center-align the search input and button */
+        width: 100%;
+        margin-top: 10px; /* Add some space between the search input/button and navigation links */
+    }
+
+    .navbar {
+        padding: 10px 20px; /* Increase padding for better spacing on smaller screens */
+    }
+
+    .nav-list li {
+        margin-right: 0; /* Remove margin between navigation links */
+        margin-bottom: 10px; /* Add some space between navigation links */
+    }
+
+    .section {
+        flex-direction: column; /* Stack sections vertically */
+        height: auto; /* Allow sections to expand based on content */
+    }
+
+    .box-main {
+        flex-direction: column; /* Stack boxes in the first section vertically */
+        text-align: center; /* Center-align text and buttons in the first section */
+        max-width: 100%; /* Allow content to take full width on smaller screens */
+    }
+
+    .first-half {
+        width: 100%; /* Make the first-half take full width on smaller screens */
+    }
+
+    .second-half img {
+        width: 100%; /* Make the image in the first section take full width */
+    }
+
+    .paras {
+        padding: 0 20px; /* Reduce padding for paragraphs in sections */
+    }
+
+    .form-input {
+        width: 100%; /* Make form inputs take full width on smaller screens */
+    }
+
+    .thumbnail img {
+        width: 100%; /* Make images in sections take full width on smaller screens */
+    }
+}
+
+     
+
+    
